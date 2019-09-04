@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NguyenTo</title>
+</head>
+<body>
+<script>function ktSoNguyenTo() {
+    let check = 2;
+    let i, j;
+    for (i = 2; i < 10000; i++) {
+        for (j = (Math.floor(i / 2)); j > 1; j--) {
+            if (i % j === 0) {
+                check = 0;
+                break;
+            }
+        }
+        if (check === 2) {
+            document.write(i + " ");
+        }
+        check = 2;
+    }
+    document.write("ketthuc");
+}
+ktSoNguyenTo();
+</script>
+
+</body>
+</html>
